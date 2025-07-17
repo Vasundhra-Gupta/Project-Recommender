@@ -8,7 +8,7 @@ from flask_cors import CORS
 
 
 app = Flask(__name__)
-CORS(app, origins=["http://localhost:3000, http://localhost:5173"])
+CORS(app, origins=["http://localhost:5173"])
 
 fileObject = open("project_list_dict.pkl", "rb")
 df_dict = pickle.load(fileObject)
