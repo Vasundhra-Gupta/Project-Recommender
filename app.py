@@ -6,7 +6,7 @@ from sklearn.feature_extraction.text import CountVectorizer
 from flask_cors import CORS
 
 app = Flask(__name__)
-CORS(app, origins=["http://localhost:5173", "https://peer-connect-chat.vercel.app"])
+CORS(app, origins=["http://localhost:5173", "https://peer-connect-chat.vercel.app", "https://peer-connect-linksters.vercel.app"])
 
 fileObject = open("project_list_dict.pkl", "rb")
 df_dict = pickle.load(fileObject)
